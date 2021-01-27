@@ -1,0 +1,63 @@
+let maps = [
+	"Tree Stump",
+	"Town Center",
+	"Skates",
+	"Lotus Island",
+	"Candy Falls",
+	"Winter Park",
+	"Carved",
+	"Park Path",
+	"Alpine Run",
+	"Frozen Over",
+	"In The Loop",
+	"Cubism",
+	"Four Circles",
+	"Hedge",
+	"End Of The Road",
+	"Logs",
+	"Encrypted",
+	"Bazaar",
+	"Adora's Temple",
+	"Spring Spring",
+	"KartsNDarts",
+	"Moon Landing",
+	"Haunted",
+	"Downstream",
+	"Firing Range",
+	"Cracked",
+	"Streambed",
+	"Chutes",
+	"Rake",
+	"Spice Islands",
+	"X Factor",
+	"Mesa",
+	"Geared",
+	"Spillway",
+	"Cargo",
+	"Pat's Pond",
+	"Peninsula",
+	"High Finance",
+	"Anotherbrick",
+	"Off The Coast",
+	"Cornfield",
+	"Underground",
+	"Flooded Valley",
+	"Infernal",
+	"Bloody Puddles",
+	"Workshop",
+	"Quad",
+	"Dark Castle",
+	"Muddy Puddles",
+	"#Ouch"
+]
+
+module.exports.run = async (bot, message, args) => {
+	let map = maps[Math.floor(Math.random()*maps.length)]
+	message.channel.createMessage(`\`${map}\` has been chosen`)
+}
+
+module.exports.info = {
+    name: "maps",
+    description: "Roll for a random map",
+    category: "Game",
+}

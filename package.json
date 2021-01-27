@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "eris": "^0.14.0",
+    "eris-additions": "^1.4.1",
+    "moment": "^2.29.1",
+    "ms": "^2.1.3"
+  }
+}
