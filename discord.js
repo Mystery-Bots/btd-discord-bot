@@ -7,7 +7,7 @@ const moment = require("moment");
 
 
 const bot = new Discord.Client(config.discord.token, {
-	intents:5635,
+	intents:512,
 	compress: true,
 	guildSubscriptions:false,
 	messageLimit:0,
